@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        The window object allows execution of code at specified time intervals.
+
+These time intervals are called timing events.
+
+The two key methods to use with JavaScript are:
+
+setTimeout(function, milliseconds)
+Executes a function, after waiting a specified number of milliseconds.
+
+setInterval(function, milliseconds)
+Same as setTimeout(), but repeats the execution of the function continuously.
+The setTimeout() and setInterval() are both methods of the HTML DOM Window object.
+    </p>
+
+    <button onclick="setTimeout(myFunction, 7000)">click</button>
+    <button onclick="clearTimeout(myFunction)">stop</button>
+    <button onclick="setTimeinterval(myTime,2000)">Timer</button>
+
+    <p id="imer"></p>
+    <script>
+        function myFunction(){
+            alert("Seven good seconds!!")
+        }
+    </script>
+    <p id="timer"></p>
+
+<script>
+setInterval(myTimer, 1000);
+
+function myTimer() {
+  var d = new Date();
+  document.getElementById("timer").innerHTML = d.toLocaleTimeString();
+}
+</script>
+
+    
+</body>
+</html>

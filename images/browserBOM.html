@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>window.location.href returns the href (URL) of the current page
+        window.location.hostname returns the domain name of the web host
+        window.location.pathname returns the path and filename of the current page
+        window.location.protocol returns the web protocol used (http: or https:)
+        window.location.assign() loads a new document</p>
+    <p>
+        o protect the privacy of the users, there are limitations to how JavaScript can access this object.
+
+        Some methods:
+        
+        history.back() - same as clicking back in the browser
+        history.forward() - same as clicking forward in the browser 
+    </p>
+
+    <p>
+        The window.navigator object can be written without the window prefix.
+
+Some examples:
+
+navigator.cookieEnabled : returns True if cookies are enabled
+navigator.appCodeName  : returns the application name of the browser:
+navigator.platform
+    </p>
+    <p id="screen"></p>
+    <p id="href"></p>
+    <p id="protoc"></p>
+    <p id="hist"></p>
+
+    <script>
+        document.getElementById("screen").innerHTML =  "Screen width:" + screen.colorDepth;
+    </script>
+    <script>
+        document.getElementById("href").innerHTML = "The url is :" + window.location.pathname;
+
+    </script>
+
+    <script>
+        document.getElementById("protoc").innerHTML = window.location.assign;
+    </script>
+
+    <script>
+        document.getElementById("hist").innerHTML =
+        "navigator.appName is " + navigator.appName;
+    </script>
+    
+</body>
+</html>

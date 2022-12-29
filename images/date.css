@@ -1,0 +1,12 @@
+button{
+
+color: rgb(242, 48, 168)255, 0, 157;
+font-size: medium;
+font-family: monospace;
+rotate: 2deg ;
+}
+
+button.hover{
+    color: aquamarine;
+
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="timi"> </p>
+    <button onclick="myTimer(1000)">Time</button>
+    <script>
+        setInterval(myTimer,1000)
+    function myTimer(){
+        const d= new Dae();
+        document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+            
+        }
+    </script>
+    <script>
+        const r = new Date("02-11-2002")
+    </script>
+    <script>
+        function timeToday(){
+            const to  = new Date();
+            let h = to.getHours();
+            let m = to.getMinutes();
+            let s =to.getSeconds();
+            let ms = to.getMilliseconds();
+
+            m = checkTime(m)
+            s = checkTime(s)
+
+            document.getElementById('timi').innerHTML = h + ":" + m + ":" + s + ":" + ms ;
+            setInterval(timeToday, 1000)
+}
+
+
+function checkTime(i){
+    if(i<10){
+        i = "0" + i
+    };
+    return i
+}
+
+        
+    </script>
+
+</body>
+</html>

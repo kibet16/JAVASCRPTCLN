@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My fourth</h1>
+    <p id="fourth"></p>
+    <p id="2nd"></p>
+    <p id="3rd"></p>
+    <input id="age" value="18">
+    <button onclick="myFunction()">Try It</button> 
+    <p id="ager"></p>
+
+    <script>
+
+        var xx = [];
+        xx[0] = "Kibet"
+        xx[1] = "anonymus";
+        xx[2] = "Baitee";
+
+        document.getElementById("fourth").innerHTML = xx[0] +" "+ "is always " + xx[1];
+    </script>
+
+    <script>
+        document.getElementById("2nd").innerHTML = "He is aged " + Math.ceil(21.8);
+    </script>
+
+    <script>
+        document.getElementById("3rd").innerHTML = newDate.getDay();
+    </script>
+
+    <script>
+        function myFunction(){
+            let canjoin;
+            let age = Number(document.getElementById("age").value);
+            if (isNaN(age)){
+                canjoin= "Input a number or integer";
+            }
+            else{
+                canjoin= (age < 22)? "You are young": "You are old enough";
+            }
+            document.getElementById("ager").innerHTML= canjoin +" " + "to enter!!!!!!!";
+        }
+         
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<p id="time"></p>
+<p id="number"></p>
+<script>
+    let text;
+    const today = new Date();
+    const someday = new Date();
+    someday.setFullYear(2014, 12, 2);
+    if (someday >today){
+        text = "That was long ago";
+    } else{
+        text = "You come from the future"
+    }
+    document.getElementById("time").innerHTML = text;
+
+</script>
+
+<script>
+   let textt = "";
+   let i =0;
+   while(i<20){
+    textt +=  "<br>"+ i;
+   i++;
+
+    }
+    document.getElementById("number").innerHTML = textt;
+</script>
+    
+</body>
+</html>

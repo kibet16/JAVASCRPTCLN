@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Third Trial</h1>
+    <p id="third"></p>
+
+    <script>
+        var xx =["apple", "cane", "Banana", "pine", "Mango"]
+        let xxLen = xx.length;
+
+
+        let text ="<ul>";
+        for (let i = 0; i < xxLen; i++){
+            text += "<li>" + xx[i] + "</li>";
+        }
+
+        text += "</ul>";
+            document.getElementById("third").innerHTML = text;
+
+
+    </script>
+    <script>
+        document.getElementById("third").innerHTML = xx.join(" $ ")
+    </script>
+    
+</body>
+</html>

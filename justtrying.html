@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRY</title>
+
+</head>
+<body>
+    <h1>Try</h1>
+    <p class="1st"></p>
+    <p class="2nd"></p>
+    <input id="age" type="text" value="25">
+    <button onclick="myFunction()">Try</button>
+    <p class="3rd"></p>
+
+
+    <script>
+        function myFunction(){
+
+            let cannjoin
+            let age = Number(document.getElementById("age").value);
+            if(isNaN(age)){
+                cannjoin = "Input a number";
+            }
+            else{
+                cannjoin =(age<25)? "You are young" : "Old enough";
+            }
+            document.getElementById("3rd").innerHTML = cannjoin +" " + "to enter!!!"
+        }
+    </script>
+    
+</body>
+</html>

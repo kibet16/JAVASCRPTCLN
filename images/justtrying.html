@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="try"></p>
+    <p id="2nd"></p>
+    <p id="3rd"></p>
+    <script>
+        cars = ["Lambo", "Ferrari", "Pagani", "Chrysler", "Mercedes", "Maybach"]
+        let c = 0
+        let text = ""
+        while (cars[c]){
+            text+= cars[c] + "<br>";
+            c++;
+        }
+        document.getElementById("try").innerHTML = text;
+
+    </script>
+    <script>
+        cars = ["Lambo", "Ferrari", "Pagani", "Chrysler", "Mercedes", "Maybach"]
+        let x = 0
+        let textt = ""
+        for(;cars[x];){
+            textt += cars[x] + "<br>";
+            x++;
+
+        }
+        document.getElementById("2nd").innerHTML = textt;
+
+    </script>
+    
+    
+</body>
+</html>

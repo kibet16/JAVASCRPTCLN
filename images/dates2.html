@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="w3s"></p>
+    <p id="date"></p>
+    <script>
+        var x = "W3schools";
+        let text = "";
+        for (w in x){
+            text += w + "<br>"
+            w++
+        } 
+        document.getElementById("w3s").innerHTML = text;
+    </script>
+
+    <button onload="this.innerHTML = Date()">Date</button>
+    <button onclick="prompt('Enter input:')">CLICK</button>
+    
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="while"></p>
+    <p id="do"></p>
+    <p id="collect"></p>
+    <p id="for"></p>
+    <p id="mkur"></p>
+
+    <script>
+
+        let text = "";
+        let i = 0;
+        while (i < 10){
+            text +=  i + "<br>";
+             i++;
+        }
+        document.getElementById("while").innerHTML = text;
+    </script>
+    <script>
+        let textt = ""
+        let a = 0;
+        do{
+            textt += a + "<br>";
+        a++;
+    }
+            while (a<5);
+    document.getElementById("do").innerHTML = textt;
+
+                
+        
+    </script>
+
+    <script>
+        const cars = ["Mercedes", "BMW", "Mazda", "Chrysler", "Toyota", "Hyundai"]
+        let c = 0;
+        let texttt = "";
+
+        while (cars[c]){
+            texttt += cars[c] + "<br>";
+            c++;
+        }
+        document.getElementById("collect").innerHTML = texttt;
+    </script>
+
+
+    <script>
+        const carss = ["Lexus", "Pagani", "Ferrari", "Chrysler", "Lambo", "Hyundai"]
+        let textttt = "";
+        let cc   = 0;
+
+        for (; carss[cc];) {
+            textttt += carss[cc] + "<br>";
+            cc++;
+        }
+
+
+
+        document.getElementById("for").innerHTML = textttt;
+    </script>
+
+    <script>
+        var m = ["Jose", "Mugo", "Kibe", "Macha", "kamau"]
+        let mkuruu = "";
+        let mm = 0;
+
+        for(;m[mm];){
+            mkuruu += m[mm] + "<br>";
+            mm++;
+        }
+         
+
+
+        document.getElementById("mkur").innerHTML = mkuruu;
+    </script>
+</body>
+</html>

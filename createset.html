@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        new Set()	Creates a new Set
+add()	Adds a new element to the Set
+delete()	Removes an element from a Set
+has()	Returns true if a value exists in the Set
+forEach()	Invokes a callback for each element in the Set
+values()	Returns an iterator with all the values in a Set
+Property	Description
+size	Returns the number of elements in a Set
+    </p>
+    <p id="set"></p>
+    <p id="set1"></p> 
+    <p id="foreach"></p>
+    <p id="value"></p>
+    <p id="persn"></p>
+
+    <script>
+        const letters = new Set(["a", "b", "c"])
+        document.getElementById("set").innerHTML = letters.size;
+        
+    </script>
+
+    <script>
+        var letter = new Set();
+
+        letter.add("a");
+        letter.add("b");
+        letter.add("c");
+        letter.add("g");
+        letter.add("k");
+        letter.add("y");
+        letter.add("p");
+        document.getElementById("set1").innerHTML = letter.size;
+
+    </script>
+
+    <script>
+        var letterr = new Set(["a", "f", "g", "p", "r"])
+        let text = "";
+        letterr.forEach(function(value){
+            text += value + "<br>";
+
+        })
+
+        document.getElementById("foreach").innerHTML = text
+
+    </script>
+
+    <script>
+        const letterz = new Set(["a","b","c"]);
+        let textt = "";
+        for(const x of letterz.values())  {
+            textt += x + "<br>";
+        }
+        document.getElementById("value").innerHTML = textt;
+
+    </script>
+
+    <script>
+
+        var person = {
+            firstName : "Kibet",
+            lastName : "Mutai",
+            age : 22,
+            club : "Manchester united",
+            wrestler: "Steve austin",
+            home : "Kericho"
+
+        };
+
+        document.getElementById("persn").innerHTML= person.age + " " + person.wrestler;
+    </script>
+
+</body>
+</html>

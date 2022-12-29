@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        let x ="";
+        const myCars ={
+            fname: "kibe",
+            lname: "mutai",
+            age: 30,
+            cars:[
+            {name:"Toyota", models:["v8", "prado", "markx"]},
+            {name:"Mercedes", models:["Eseries", "Cseries", "sclass"]},
+            {name:'lexus', models:["lx570", "lx450", "lx300"]}
+            ]
+        }
+        for(let i in myCars.cars){
+            x = "<h1>"+ x + myCars.cars[i].name + "<h1>";
+            for(let j in myCars.cars[i].models){
+                x = x+ myCars.cars[i].models[j]  +"<br>"; 
+            }
+        }
+        document.getElementById("demo").innerHTML = x;
+    </script>
+    
+</body>
+</html>

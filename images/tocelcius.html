@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="time" onclick="displayDate()">click</p>
+    <p id="expo"></p>
+    <p id="fix"></p>
+    <p id="number"></p>
+    <p id="wife"></p>
+    <script>
+        function toCelcius(f){
+            return (5/9) * (f-32)
+        }
+        document.getElementById("demo").innerHTML = "The temperature is " + toCelcius(89);
+    </script>
+    <script>
+        function displayDate(){
+            document.getElementById("time").innerHTML = Date();
+        }
+    </script>
+    <script>
+        let x = 145;
+        document.getElementById("expo").innerHTML = x.toFixed(3);
+
+    </script>
+    <script>
+       var y = 87.6454;
+       document.getElementById("fix").innerHTML = y.toFixed(6)
+    </script>
+    <script>
+        var z = Number(new Date("1993-02-07"))
+        document.getElementById("number").innerHTML = z;
+    </script>
+    <script>
+        function myWife(){
+            let myAge =prompt('Enter age')
+            return (myAge*0.5 +(7 | 8))
+        }
+        document.getElementById('wife').innerHTML = myWife();
+    </script>
+    
+</body>
+</html>
